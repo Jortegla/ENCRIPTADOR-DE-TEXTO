@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
   </head>
-  <body>
-    <header>
-      <div class="titulo">
-        <h1>Encriptador</h1>
-      </div>        
-    </header>
-    
-    <main>
+  <body>    
       <div class="container">
         <div class="encriptar">
           <textarea
@@ -26,35 +19,34 @@
             rows="10"
             placeholder="Ingrese el texto aquí"
       ></textarea>
+      <div class="terminos">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>      
+     <div class="botones">
+      <button 
+        class="btn-encriptar" type="button" id="botonEncriptador" onclick="encriptar()">
+        Encriptar
+      </button>
+      <button class="btn-desencriptar" type="button" id="botonDesencriptador" onclick="desencriptar()">
+        Desencriptar
+      </button>        
+     </div> 
         </div>
-        <div class="terminos">
-          <p>Solo letras minúsculas y sin acentos.</p>
-        </div>      
-       <div class="botones">
-        <button 
-          class="btn-encriptar" type="button" id="botonEncriptador" onclick="encriptar()">
-          Encriptar
-        </button>
-        <button class="btn-desencriptar" type="button" id="botonDesencriptador" onclick="desencriptar()">
-          Desencriptar
-        </button>
-        <button type="button" id="botonCopiar">Copiar</button>
-       </div>  
-      
-      <div class="encriptado">
-        <img src="img/hombre-investigando-lupa_1048-2931.avif" alt="" id="imagen">
+        
+        <div class="encriptado">
+        <img src="img/imagenBuscador.png" alt="" id="imagenBuscador">
         <div class="mensajeEncriptado" id="mensajeEncriptado">
-          <h2 id="tituloMensaje">Ningún mensaje encontrado</h2>
+          <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
           <p id="parrafo">Ingresa el texto a encriptar o desencriptar</p>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
-        </div>
+          <button 
+            class="btn-copiar" 
+            type="button" 
+            id="botonCopiar">
+            Copiar
+          </button>          
+        </div>        
       </div>
-    </div>
-    </main>
-    
-    <footer>
-      <p>Autor: Jessica Ortega<br /></p>
-    </footer>
+    </div>    
   </body>
   <script src="scrip.js"></script>
 </html>

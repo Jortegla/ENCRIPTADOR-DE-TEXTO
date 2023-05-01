@@ -18,7 +18,7 @@
             cols="30"
             rows="10"
             placeholder="Ingrese el texto aquí"
-      ></textarea>
+      ></textarea>      
       <div class="terminos">
         <p>Solo letras minúsculas y sin acentos.</p>
       </div>      
@@ -27,24 +27,34 @@
         class="btn-encriptar" type="button" id="botonEncriptador" onclick="encriptar()">
         Encriptar
       </button>
-      <button class="btn-desencriptar" type="button" id="botonDesencriptador" onclick="desencriptar()">
+      <button class="btn-desencriptar" type="button" id="botonDesencriptador" onClick="desencriptar()">
         Desencriptar
       </button>        
      </div> 
         </div>
         
         <div class="encriptado">
-        <img src="img/imagenBuscador.png" alt="" id="imagenBuscador">
-        <div class="mensajeEncriptado" id="mensajeEncriptado">
-          <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
-          <p id="parrafo">Ingresa el texto a encriptar o desencriptar</p>
-          <button 
-            class="btn-copiar" 
-            type="button" 
-            id="botonCopiar">
-            Copiar
-          </button>          
-        </div>        
+          <img src="img/imagenBuscador.png" alt="" id="imagenEnc">
+          <div class="mensajeEncriptado" id="mensajeEncriptado">
+            <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>                   
+          </div>
+          <div class="textCifrado">
+            <textarea
+              name="parrafo"
+              class="parrafo"
+              id="parrafo"
+              cols="50"
+              rows="4"
+              placeholder="Ingresa el texto a encriptar o desencriptar"
+            ></textarea>
+            <button 
+              class="btn-copiar" 
+              type="button" 
+              id="botonCopiar"
+              onclick="copiar()">
+              Copiar
+            </button> 
+          </div>                      
       </div>
     </div>    
   </body>
